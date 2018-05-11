@@ -23,9 +23,12 @@ Documentation
 
 Issues
 
- 支持impala jdbc
+ - 支持impala jdbc
  
- 正常的参数条件
+ ### 正常的参数条件
+ 
+ ```
   val IMPALAD_HOST=
   val IMPALAD_JDBC_PORT = "21050"
   val CONNECTION_URL = "jdbc:impala://" + IMPALAD_HOST + ':' + IMPALAD_JDBC_PORT + "/;auth=noSasl";
+ ```
