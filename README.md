@@ -35,7 +35,8 @@ Issues
 
 ### 通过druid 调用impala，实现kudu select查询用于分析
 
-、、、
+```
+impala.jdbc.version =2.5.43
 <!--impala jar-->
             <dependency>
                 <groupId>com.cloudera.impala.jdbc</groupId>
@@ -62,4 +63,4 @@ Issues
                 <artifactId>TCLIServiceClient</artifactId>
                 <version>${impala.jdbc.version}</version>
             </dependency>
-            、、、
+           ```
