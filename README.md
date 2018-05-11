@@ -32,3 +32,34 @@ Issues
   val IMPALAD_JDBC_PORT = "21050"
   val CONNECTION_URL = "jdbc:impala://" + IMPALAD_HOST + ':' + IMPALAD_JDBC_PORT + "/;auth=noSasl";
  ```
+
+### 通过druid 调用impala，实现kudu select查询用于分析
+
+、、、
+<!--impala jar-->
+            <dependency>
+                <groupId>com.cloudera.impala.jdbc</groupId>
+                <artifactId>hive_metastore</artifactId>
+                <version>${impala.jdbc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.cloudera.impala.jdbc</groupId>
+                <artifactId>hive_service</artifactId>
+                <version>${impala.jdbc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.cloudera.impala.jdbc</groupId>
+                <artifactId>ImpalaJDBC41</artifactId>
+                <version>${impala.jdbc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.cloudera.impala.jdbc</groupId>
+                <artifactId>ql</artifactId>
+                <version>${impala.jdbc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.cloudera.impala.jdbc</groupId>
+                <artifactId>TCLIServiceClient</artifactId>
+                <version>${impala.jdbc.version}</version>
+            </dependency>
+            、、、
