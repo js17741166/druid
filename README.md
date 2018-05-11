@@ -19,3 +19,13 @@ Documentation
 - 中文 https://github.com/alibaba/druid/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98
 - English https://github.com/alibaba/druid/wiki/FAQ
 - Druid Spring Boot Starter https://github.com/alibaba/druid/tree/master/druid-spring-boot-starter
+
+
+Issues
+
+ 支持impala jdbc
+ 
+ 正常的参数条件
+  val IMPALAD_HOST=
+  val IMPALAD_JDBC_PORT = "21050"
+  val CONNECTION_URL = "jdbc:impala://" + IMPALAD_HOST + ':' + IMPALAD_JDBC_PORT + "/;auth=noSasl";
